@@ -4,7 +4,7 @@ Actually backend runs at different port but request are routed to it based on co
 
 ## How to run
 * Copy the frontend build folder to this folder
-* Put /api in your backend context path
+* All backend api should start with /api. In simple words set context path as /api
 * In nginx.conf, replace the server ip address to your [local ip address]:[backend server port]. It is currently set to 192.168.1.6:8080
 * docker build -t nginx . --no-cache
 * docker run -dit -p 80:80 nginx
